@@ -28,5 +28,7 @@ myImage.onclick = () => {
     myImage.setAttribute("src", "images/firefox2.png");
   } else {
     myImage.setAttribute("src", "images/firefox-icon.png");
+  }else{
+    myImage.setAttribute(images/F57C43FA-C375-4C39-BE1B-F428367A7F0C_4_5005_c.jpeg);
   }
 };
