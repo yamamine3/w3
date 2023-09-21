@@ -9,14 +9,7 @@ function setUserName() {
   localStorage.setItem("name", myName);
   myHeading.textContent = `Mozilla はかっこいいよ、${myName} さん`;
 }
-myImage.onclick = () => {
-  const mySrc = myImage.getAttribute("src");
-  if (mySrc === "images/firefox-icon.png") {
-    myImage.setAttribute("src", "images/firefox2.png");
-  } else {
-    myImage.setAttribute("src", "images/firefox-icon.png");
-  }
-};
+
 myButton.onclick = function() {
   setUserName();
 }
@@ -29,3 +22,11 @@ myImage.onclick = function() {
   let mySrc = myImage.getAttribute('src');
   console.log("画像をクリックしました");
 }
+myImage.onclick = () => {
+  const mySrc = myImage.getAttribute("src");
+  if (mySrc === "images/firefox-icon.png") {
+    myImage.setAttribute("src", "images/firefox2.png");
+  } else {
+    myImage.setAttribute("src", "images/firefox-icon.png");
+  }
+};
